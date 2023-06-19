@@ -6,6 +6,39 @@
         <title>Document</title>
     </head>
     <body>
-        
+        <script>
+            //lets creat a js object
+            var student1 = {
+                //1. p/property:v/value
+                fname:"ranu",
+                lname:'patidar',
+                salart:50000,
+                address:"jeeran",
+                //1. function defination
+                getMyFullAddress(){
+                    console.log("hello"+` `+this.fname+' '+this.lname+` `+this.salary+" "+this.address);
+                }
+            };// student1 is a type of js object type
+            let student2 = 'ranu patidar';// student2 is a type of string
+            const student3 = 40; // student3 is a type of number
+
+            let student4={
+                fname:"pooja",
+                lname:'patidar',
+                salary:"30000",
+                address:'nmh',
+                getAddress(){
+                    //every function return something
+                    return this.address;
+                }
+                
+            } 
+             //how to access these information
+            console.log(student1.fname);//.is member selection operator
+            console.log(student1.getMyFullAddress());
+            console.log(student4.fname);
+            console.log(student4.getAddress());
+            
+         </script>    
     </body>
 </html>
